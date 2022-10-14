@@ -24,7 +24,7 @@ package ComponentDesign
             .Modelica.Mechanics.Rotational.Sources.Torque torque annotation(Placement(transformation(extent = {{-50,-8},{-30,12}},origin = {0,0},rotation = 0)));
             .Modelica.Mechanics.Rotational.Components.Fixed fixed annotation(Placement(transformation(extent = {{16,-12},{36,8}},origin = {0,0},rotation = 0)));
             .Modelica.Blocks.Sources.Sine sine(amplitude = 100,f = 2) annotation(Placement(transformation(extent = {{-82,-8},{-62,12}},origin = {0,0},rotation = 0)));
-            .ImpactTrainingSolutions.Day1.W3.ComponentDesign.Components.ElasticShaft elasticShaft(J1 = 0.6,J2 = 0.4,c = 100000) annotation(Placement(transformation(extent = {{-14.0,-8.0},{6.0,12.0}},origin = {0.0,0.0},rotation = 0.0)));
+            .ImpactTrainingSolutions.Day1.W3.ComponentDesign.Components.ElasticShaft elasticShaft(J1 = 0.7,J2 = 0.4,c = 100000) annotation(Placement(transformation(extent = {{-14.0,-8.0},{6.0,12.0}},origin = {0.0,0.0},rotation = 0.0)));
         equation
             connect(sine.y,torque.tau) annotation(Line(points = {{-61,2},{-52,2}},color = {0,0,127}));
             connect(torque.flange,elasticShaft.flange_a) annotation(Line(points = {{-30,2},{-14,2}},color = {0,0,0}));
